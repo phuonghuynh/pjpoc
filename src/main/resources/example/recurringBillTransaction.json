@@ -1,0 +1,48 @@
+{
+  "transactionId" : 50,
+  "uri" : "https://api.payjunctionlabs.com/transactions/50",
+  "terminalId" : 1,
+  "action" : "CHARGE",
+  "amountBase" : "1234.00",
+  "amountTotal" : "1234.00",
+  "status" : "CAPTURE",
+  "created" : "2015-10-29T16:55:23Z",
+  "lastModified" : "2015-10-29T16:55:23Z",
+  "response" : {
+    "approved" : true,
+    "code" : "00",
+    "message" : "Approved",
+    "processor" : {
+      "authorized" : true,
+      "approvalCode" : "PJ20AP",
+      "avs" : {
+        "status" : "REQUESTED",
+        "requested" : "BYPASS",
+        "match" : {
+          "ZIP" : false,
+          "ADDRESS" : false
+        }
+      },
+      "cvv" : {
+        "status" : "NOT_REQUESTED"
+      }
+    }
+  },
+  "settlement" : {
+    "settled" : false
+  },
+  "vault" : {
+    "type" : "CARD",
+    "accountType" : "VISA",
+    "lastFour" : "1111"
+  },
+  "billing" : {
+    "firstName" : "Huynh Quoc",
+    "lastName" : "Phuong",
+    "address" : {
+      "address" : "A1-152/11 Ng Thi Tan P2 Q8",
+      "city" : "HCM",
+      "zip" : "70000"
+    }
+  }
+}
